@@ -10,7 +10,7 @@ fn main() {
     validate(miner, block, difficulty);
 }
 
-fn validate(miner: &str, block : u64, difficulty: usize) -> u64 {
+fn mine(miner: &str, block : u64, difficulty: usize) -> u64 {
     let value = [miner.as_bytes(), block.to_string().as_bytes()].concat();
     // Exercicio 2: Como minerar um bloco em paralelo?
     // Se uma thread minerar o bloco, todas devem parar!
