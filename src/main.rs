@@ -4,7 +4,7 @@ use ring::digest;
 
 // Exercicio 1: Como minerar vários blocos em paralelo?
 fn main() {
-    let miner = "leoyvens";
+    let miner = "joao_silva";
     let block : u64 = rand::random();
     let difficulty = 3;
     validate(miner, block, difficulty);
